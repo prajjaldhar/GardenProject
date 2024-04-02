@@ -1,0 +1,67 @@
+.custom-navbar {
+    background-color: transparent;
+    /* Transparent background */
+    font-family: 'Orbitron', sans-serif;
+    /* Apply Orbitron font family */
+    display: flex;
+    justify-content: space-between;
+    /* Space out the content and icons */
+    align-items: center;
+    /* Center the content vertically */
+}
+
+.custom-navbar .navbar-brand {
+    color: #155815;
+    margin-left: 180px;
+    /* Green color for the brand */
+    margin-right: auto;
+    /* Push the brand to the left */
+}
+
+.custom-navbar .navbar-nav {
+    margin: 0 auto;
+    /* Center the navbar links */
+}
+
+.custom-navbar .nav-link {
+    color: #0c470e;
+    font-size: 20px;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #c0ff33;
+    /* Light green color on hover */
+}
+
+.custom-navbar .icon-link {
+    margin-left: 10px;
+    /* Add spacing between links and icons */
+    position: relative;
+}
+
+/* Custom styling for the cart container */
+.cart-container {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    width: 15rem;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+    display: none;
+    border: 1px solid #5c5f5a;
+}
+
+.btnshop {
+    color: rgb(17, 112, 17);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: 1px solid #5bf310;
+    border-color: #0c470e;
+}
+
+.icon-link:hover .cart-container {
+    display: block;
+}
