@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Home.css";
 import CardSection from "../../components/CardSection/CardSection";
 import NavBar from "../../components/NavBar/NavBar";
+import FooterComp from "../../components/FooterComp/FooterComp";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
@@ -59,6 +60,7 @@ const Home = () => {
           <CardSection key={plant.id} plant={plant} />
         ))}
       </div>
+      <FooterComp />
     </>
   );
 };
