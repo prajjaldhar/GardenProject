@@ -18,6 +18,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use("/api/plants", PlantRoutes);
+app.use("/api/users", UserRoutes);
 
 //rest api
 app.get("/", (req, res) => {

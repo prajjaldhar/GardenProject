@@ -7,10 +7,12 @@ import FooterComp from "../../components/FooterComp/FooterComp";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
+  const [options, setoptions] = useState("All Products");
+  const [optionvalue, setoptionvalue] = useState("allproducts");
   const [sortByOptions] = useState({
     "Price:High to Low": "getplants/pricehigh",
     "Price: Low to High": "getplants/pricelow",
-    "Average Rating": "averageRating",
+    "Average Rating": "getplants/avgrating",
     "All Products": "getplants",
   });
 
@@ -31,14 +33,16 @@ const Home = () => {
 
   const handleSortBy = (option) => {
     fetchData(sortByOptions[option]);
+    setoptionvalue(sortByOptions[option]);
+    setoptions(option);
   };
 
   return (
     <>
       <NavBar />
       <div className="navigation">
-        <div className="navigation-item">home/allproducts</div>
-        <div className="navigation-item-bold">All Products</div>
+        <div className="navigation-item">home/{optionvalue}</div>
+        <div className="navigation-item-bold">{options}</div>
         <div className="d-flex justify-content-center">
           <span className="navigation-item-light">
             Showing all {plants.length} results

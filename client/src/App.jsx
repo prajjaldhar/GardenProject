@@ -4,6 +4,7 @@ import CardSection from "./components/CardSection/CardSection";
 import Home from "./pages/Home/Home";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Cart from "./components/Cart/Cart";
+import FooterComp from "./components/FooterComp/FooterComp";
 // import NavBar from './components/Nav/NavBar'
 
 function App() {
