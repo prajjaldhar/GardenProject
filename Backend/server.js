@@ -5,6 +5,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const connectDB = require("./config/db");
 const PlantRoutes = require("./routes/PlantRoutes");
+const UserRoutes = require("./routes/UserRoutes");
 
 //config
 dotenv.config();
